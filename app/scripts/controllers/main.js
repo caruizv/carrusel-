@@ -9,39 +9,22 @@
  */
 angular.module('angularApp')
  .controller('MainCtrl', function($scope){
-        var baseURL='http://lorempixel.com/960/450/';
-        $scope.setInterval=5000;
-        $scope.slides=[
+        var URL='http://placeimg.com/500/500/';
+        $scope.time=6000;
+        $scope.presentation=[
         {
-            title:'Aprende  mantenerte en forma',
-            image:baseURL+'sports/',
-            text:'Practica Deporte'
+            title:'Tipo de personas',
+            image:URL+'people',
+            description:'Prefiero hablar con personas que hacen cosas, que con personas que critican lo que otros hacen.'
         },
-        { 
-            title:'Buena Alimentacion',
-            image:baseURL+'food/',
-            text:'Alimentate muy bien es bueno'
-        },   { 
-            title:'Naturaleza',
-            image:baseURL+'nature/',
-            text:'Ayuda a Programar'
-        }
-        ];
-         var baseURL='http://lorempixel.com/200/200/';
-         $scope.contenido=[
         {
-            title:'Sobre Nosotros',
-            img:baseURL+'technics/3',
-            summary:'IOET'
-        },
-        { 
-            title:'Servicios',
-            img:baseURL+'business',
-            summary:'IOET'
-        },   { 
-            title:'Contactos',
-            img:baseURL+'transport',
-            summary:'IOET'
+            title:'Tus mejores amigos',
+            image:URL+'animals',
+            description:'Cuando un hombre mata a un tigre lo llaman deporte, cuando un tigre mata al hombre lo llaman ferocidad.'
+        },   {
+            title:'Cuida el lugar donde vives',
+            image:URL+'nature',
+            description:'Mira profundamente en la naturaleza y entonces comprenderás todo mejor.'
         }
         ];
 

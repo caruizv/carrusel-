@@ -1,18 +1,30 @@
-<carousel interval="setInterval">
-  <slide ng-repeat ="slide in slides" active="slide.active">
-    <img class ="carousel-image" ng-src="{{slide.image}}"/>
-      <div class="carousel-caption">
-        <h2>{{slide.title}}</h2>
-        <p>{{slide.text}}</p>
-      </div>
-  </slide>
-</carousel>
+<div class="panel panel-danger">
+  <div class="panel-heading center-block">TU MUNDO, UN MUNDO DIFERENTE</div>
+  <div class="panel-body">
+<div class="row">
+<div class="col-md-4">
+  <p style="color:red">¿En que afectan al medio ambiente, al ser humano y a la fauna cuando se derritan los glaciares de los polos?</p>
+  <p>Estos son otros efectos que podrían darse a finales de este siglo si continúa el calentamiento:
+
+Se espera que el nivel de los mares aumente entre 18 y 59 centímetros al final de este siglo y si los polos continúan derritiéndose, podrían aumentar entre 10 y 20 centímetros adicionales.
+Es probable que los huracanes y algunas otras tormentas se hagan más fuertes.
+Las especies que dependen unas de otras pueden perder la sincronización. Por ejemplo, las plantas podrían florecer antes de que los insectos que las polinizan sean activos.</p>
+</div>
+<div class="col-md-8">
 
 
-<div class="row-fluid">
-  <div class="col-md-4" ng-repeat="block in contenido">
-    <img class="img-circle" ng-src="{{block.img}}">
-    <h3>{{block.title}}</h3>
-    <p>{{block.summary}}</p>
+    <carousel interval="time">
+      <slide ng-repeat ="presentation in presentation" active="presentation.active">
+        <img class ="carousel-image" ng-src="{{presentation.image}}"/>
+          <div class="carousel-caption">
+            <h2>{{presentation.title}}</h2>
+            <p>{{presentation.description}}</p>
+          </div>
+      </slide>
+    </carousel>
+</div>
+</div>
   </div>
 </div>
+
+
